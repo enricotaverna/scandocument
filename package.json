@@ -1,0 +1,38 @@
+{
+  "name": "scandocument",
+  "productName": "scandocument",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "enrico",
+    "email": "enrico.taverna@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.259.0",
+    "@aws-sdk/client-textract": "^3.256.0",
+    "amazon-textract-response-parser": "^0.2.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "22.1.0"
+  }
+}
